@@ -1,0 +1,47 @@
+
+body{
+    background-color: wheat;
+}
+
+.welcome{ 
+    height: 50px;
+    margin: 4rem;
+    text-align: center;
+    width: 300px;
+    left: 30px;
+
+}
+
+.welcome p{
+    padding-top: 90px;
+    font-size: 1.4rem;
+}
+
+#imagehome{
+    position: relative;
+    top: auto;
+    left: 40rem;
+    border-radius: 5px;
+    
+}
+
+.footer{
+    background-color: white;
+    opacity: 0.6;
+    text-align: center;
+    font-size:16px;
+    position: relative;
+    top: 1rem;
+}
+
+.botones{
+    
+        font-family: 'Roboto Mono', monospace;
+        padding: 10px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        overflow: hidden;
+        border-radius: 5px;
+        border: black;
+        margin-left: 45rem;
+}
