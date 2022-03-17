@@ -45,3 +45,13 @@ body{
         border: black;
         margin-left: 45rem;
 }
+
+h1{
+    text-align: center;
+    color: darkgreen;
+}
+
+.cajarecetas{
+    text-align: center;
+
+}

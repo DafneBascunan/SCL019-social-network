@@ -6,15 +6,17 @@ import { recetas} from './recetas.js';
 export const rutas = (hash) => {
   const root = document.getElementById('root');
   switch (hash) {
-    case '#/':
+    case '#/': 
+    document.getElementById('root').innerHTML='';
       root.appendChild(home());
       break;
     case '#/recetas':
+      document.getElementById('root').innerHTML='';
       root.appendChild(recetas());
       break;
 
     default:
-      root.innerHTML = 'aqui no hay nada'
+      root.innerHTML = 'mantenimiento'
   }
 };
 
