@@ -17,6 +17,23 @@ body{
     font-size: 1.4rem;
 }
 
+.grid-container{
+    display: grid;
+    background-color: greenyellow;
+    grid-template-columns: auto auto auto auto auto;
+    
+    
+
+}
+.grid-container a{
+    border: 1px solid black;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    
+
+}
+
 #imagehome{
     position: relative;
     top: auto;
@@ -35,7 +52,9 @@ body{
 }
 
 .botones{
-    
+        display: grid;
+        justify-content: end;
+        grid-template-columns: auto auto;
         font-family: 'Roboto Mono', monospace;
         padding: 10px 20px;
         border-radius: 50px;
@@ -44,7 +63,10 @@ body{
         border-radius: 5px;
         border: black;
         margin-left: 45rem;
+
+        
 }
+
 
 h1{
     text-align: center;

@@ -7,6 +7,8 @@ export const recetas = () => {
     <textarea name="Recetas" id="cajarecetas" class="boxrecetas" cols="30" rows="10" placeholder="escribe aqui tu receta"></textarea>
     <br>
     <button type="button" id="btn-boxrecipe" class="btn" value="publicar">publicar</button>
+    <br>
+    <textarea name="recetas2" id="cajarecetas2" class"boxrecetas2" cols="30" rows="10" </textarea> 
 
 
 
@@ -14,9 +16,14 @@ export const recetas = () => {
 
  divRecetas.innerHTML = viewRecetas
 
+ 
+
+ //evento para el boton
+
  divRecetas.querySelector("#btn-boxrecipe").addEventListener('click', () => {
+     let texto=document.getElementById("cajarecetas").value;
+     document.getElementById("cajarecetas2").value=texto;
     
-console.log ('hola dafne')
  })
 
 

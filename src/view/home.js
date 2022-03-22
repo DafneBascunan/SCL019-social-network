@@ -2,7 +2,7 @@
 
 export const home = () => {
   const homeUno = document.createElement('div');
-  const viewHome = ` <h1>SOUL</h1>
+  const viewHome = ` <h1>veggie</h1>
    
    <div class="botones">
    <button type="button" id="ingresar">INGRESAR</button>
@@ -10,7 +10,7 @@ export const home = () => {
    </div>
  
  
-   <div>
+   <div class="grid-container">
      <a href="#/recetas">RECETAS </a>
      <a href="">NUTRICION</a>
      <a href="">LiSTADO DE ALIMENTOS</a>
