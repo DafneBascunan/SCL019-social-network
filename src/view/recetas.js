@@ -22,9 +22,14 @@ export const recetas = () => {
 
  divRecetas.querySelector("#btn-boxrecipe").addEventListener('click', () => {
      let texto=document.getElementById("cajarecetas").value;
-     document.getElementById("cajarecetas2").value=texto;
+    // document.getElementById("cajarecetas2").value=texto;
+     sessionStorage.setItem("lastname", texto);
     
+     document.getElementById("cajarecetas2").innerHTML = sessionStorage.getItem("lastname");
+     
  })
+
+
 
 
  return divRecetas;
