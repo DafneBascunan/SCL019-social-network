@@ -1,5 +1,3 @@
-
-
 export const home = () => {
   const homeUno = document.createElement('div');
   const viewHome = ` <h1>veggie</h1>
@@ -12,7 +10,7 @@ export const home = () => {
  
    <div class="grid-container">
      <a href="#/recetas">RECETAS </a>
-     <a href="">NUTRICION</a>
+     <a href="#/nutricion">NUTRICION</a>
      <a href="">LiSTADO DE ALIMENTOS</a>
      <a href="">MAPA</a>
      <a href="">PRODUCTOS</a>
@@ -36,5 +34,6 @@ export const home = () => {
    <footer class= "footer" id = "footer"> copyrigth social network - Dafne Bascuñán 2022</footer>`;
 
   homeUno.innerHTML = viewHome;
+
   return homeUno;
 };

@@ -79,7 +79,13 @@ h1{
     color: darkgreen;
 }
 
-.cajarecetas{
+#cajarecetas2{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    left: 50%;
+    top: 50%;
 
 }
+
+
