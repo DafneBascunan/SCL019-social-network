@@ -2,6 +2,7 @@
 // eslint-disable-next-line import/no-unresolved
 import { home } from './home.js';
 import { recetas } from './recetas.js';
+// import { nutricion } from './nutricion.js';
 
 export const rutas = (hash) => {
   const root = document.getElementById('root');
@@ -15,7 +16,9 @@ export const rutas = (hash) => {
       root.appendChild(recetas());
       break;
      case '#/nutricion':
-       document.getElementbyid 
+       document.getElementbyid('root').innerHTML = '';
+       root.appendChild(nutricion());
+       break; 
 
     default:
       root.innerHTML = 'mantenimiento';

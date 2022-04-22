@@ -13,11 +13,11 @@ export const recetas = () => {
   <form id="task-form">
           <label for="Receta"></label>
           <textarea name="Recetas" id="cajarecetas" class="boxrecetas" cols="30" rows="10" placeholder="escribe aqui tu receta"></textarea>
-          <button type="button" id="btn-publicar" class="btn" value="publicar">publicar</button>
           <span class='ingresaPost'></span>
   </form>
+  <div class="flex"><button type="button" id="btn-publicar" class="btn" value="publicar">publicar</button></div>
   </div>
-  <div id="receta-creada"></div>
+  <div id="recetas-container"></div>
   `;
 
   divRecetas.innerHTML = viewRecetas;
@@ -37,21 +37,15 @@ export const recetas = () => {
       document.querySelector('#cajarecetas').value = '';
     }
   });
+printRecetas.then((arrayReceta)=>{
+  const containerRecetas = divRecetas.querySelector('#recetas-container')
+  arrayReceta.forEach(element =>{
+     console.log(element.receta)
+     containerRecetas.innerHTML += `${element.receta}`
+  })   
 
-  // const recetaCreada = divRecetas.querySelector('#receta-creada');
-
-  // const nuevaReceta = async () => {
-  //   await onSnapshot(obtenerRecetas, (querySnapshot) => {
-  //     let recetasContainer = "";
-  //     querySnapshot.forEach((doc) => {
-  //       const receta = doc.data();
-
-  //         recetaCreada.innerHTML = recetasContainer;
-  //       });
-  //     });
-  //   };
-     
-
-  return divRecetas;
+})
+return divRecetas;
 };
+
 
