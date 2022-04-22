@@ -41,7 +41,7 @@ printRecetas.then((arrayReceta)=>{
   const containerRecetas = divRecetas.querySelector('#recetas-container')
   arrayReceta.forEach(element =>{
      console.log(element.receta)
-     containerRecetas.innerHTML += `${element.receta}`
+     containerRecetas.innerHTML += `<div class="container-post">${element.receta}</div>`
   })   
 
 })

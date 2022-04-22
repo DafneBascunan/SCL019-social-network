@@ -101,4 +101,17 @@ h1{
     justify-content: center;
 }
 
+.container-post{
+    background-color: whitesmoke;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    width: 100%;
+
+
+}
+
 
