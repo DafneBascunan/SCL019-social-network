@@ -13,6 +13,6 @@ veggie es una red social donde podras compartir Y buscar  recetas en un muro y q
 ![prototipo](imgReadme/figma.png)
 ## 4. Despliegue de la pagina aqui
 podras ver el reaultado en el siguiente link pincha aqui 
-
+[link](https://dafnebascunan.github.io/SCL019-social-network//src/#/)
 
 
